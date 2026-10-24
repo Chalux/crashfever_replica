@@ -1,0 +1,66 @@
+
+#///////////////////////////
+# Cocos Creator 3D Project
+#///////////////////////////
+library/
+temp/
+local/
+build/
+profiles/
+native
+#//////////////////////////
+# NPM
+#//////////////////////////
+node_modules/
+
+#//////////////////////////
+# UI 框架冒烟驱动（tools/uitest）的编译产物
+#//////////////////////////
+.uitest-out/
+.logtest-out/
+.savetest-out/
+
+#//////////////////////////
+# VSCode
+#//////////////////////////
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+#//////////////////////////
+# WebStorm
+#//////////////////////////
+.idea/
+
+# Original game artifacts extracted for local analysis
+/reverse/
+
+# Local editor integration settings
+/settings/mcp-server.json
+/settings/tool-manager.json
+/extensions/cocos-mcp-server/
+/.creator/asset-template/**/*.url
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+
+# Logs, temporary files and manual backups
+*.log
+*.tsbuildinfo
+*.tmp
+*.temp
+*.bak
+*.backup
+*.before-*
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Packaged plugin source maps are not required at runtime
+/extensions/**/*.js.map

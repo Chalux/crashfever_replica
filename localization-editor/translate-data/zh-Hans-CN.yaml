@@ -1,0 +1,343 @@
+locale: zh-Hans-CN
+items:
+  - - title.hint
+    - key: title.hint
+      value: 点击屏幕进入
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 6a643f7a-1c1f-499e-8a57-df2a48a1fdb9
+          nodeUuid: beVeI3OUtNO4zqPdzxPldP
+          reference: 6a643f7a-1c1f-499e-8a57-df2a48a1fdb9
+        - sceneUuid: 6a643f7a-1c1f-499e-8a57-df2a48a1fdb9
+          nodeUuid: beVeI3OUtNO4zqPdzxPldP
+          reference: 6a643f7a-1c1f-499e-8a57-df2a48a1fdb9
+      _variants: []
+  - - title.progress
+    - key: title.progress
+      value: 正在加载...{progress}
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 6a643f7a-1c1f-499e-8a57-df2a48a1fdb9
+          nodeUuid: beVeI3OUtNO4zqPdzxPldP
+          reference: 6a643f7a-1c1f-499e-8a57-df2a48a1fdb9
+        - sceneUuid: 6a643f7a-1c1f-499e-8a57-df2a48a1fdb9
+          nodeUuid: beVeI3OUtNO4zqPdzxPldP
+          reference: 6a643f7a-1c1f-499e-8a57-df2a48a1fdb9
+      _variants: []
+  - - game.title
+    - key: game.title
+      value: 粉碎狂热-复刻
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 82beb09b-1e54-478c-8f25-c4e00a85e9e8
+          nodeUuid: d7gATppudBeoVd9cSzU2hr
+          reference: 82beb09b-1e54-478c-8f25-c4e00a85e9e8
+        - sceneUuid: 82beb09b-1e54-478c-8f25-c4e00a85e9e8
+          nodeUuid: d7gATppudBeoVd9cSzU2hr
+          reference: 82beb09b-1e54-478c-8f25-c4e00a85e9e8
+      _variants: []
+  - - loading.progress
+    - key: loading.progress
+      value: 正在加载...{progress}
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: a3ba8f3d-dead-4964-b78d-c535ee199cdc
+          nodeUuid: d1fX4bwUVGaK65eD0+wYB9
+          reference: a3ba8f3d-dead-4964-b78d-c535ee199cdc
+      _variants: []
+  - - button.teamedit
+    - key: button.teamedit
+      value: 编队
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: d54f7a21-b78f-4922-9f53-b918dfd31af1
+          nodeUuid: f4g9lKlq9CzKb6XIKa1QB6
+          reference: d54f7a21-b78f-4922-9f53-b918dfd31af1
+        - sceneUuid: d54f7a21-b78f-4922-9f53-b918dfd31af1
+          nodeUuid: f4g9lKlq9CzKb6XIKa1QB6
+          reference: d54f7a21-b78f-4922-9f53-b918dfd31af1
+      _variants: []
+  - - button.stagepick
+    - key: button.stagepick
+      value: 关卡
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: d54f7a21-b78f-4922-9f53-b918dfd31af1
+          nodeUuid: 47uwvI4YZA7L2seqEX8pnO
+          reference: d54f7a21-b78f-4922-9f53-b918dfd31af1
+        - sceneUuid: d54f7a21-b78f-4922-9f53-b918dfd31af1
+          nodeUuid: 47uwvI4YZA7L2seqEX8pnO
+          reference: d54f7a21-b78f-4922-9f53-b918dfd31af1
+      _variants: []
+  - - button.setting
+    - key: button.setting
+      value: 设置
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: d54f7a21-b78f-4922-9f53-b918dfd31af1
+          nodeUuid: 27ktEQj0FDTKb0S+BbwPRS
+          reference: d54f7a21-b78f-4922-9f53-b918dfd31af1
+        - sceneUuid: d54f7a21-b78f-4922-9f53-b918dfd31af1
+          nodeUuid: 27ktEQj0FDTKb0S+BbwPRS
+          reference: d54f7a21-b78f-4922-9f53-b918dfd31af1
+      _variants: []
+  - - common.mastervolume
+    - key: common.mastervolume
+      value: 主音量
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 3261676d-d47f-4646-a339-1d0dc0ced595
+          nodeUuid: a973rREvlGKpUGaEW4JVeM
+          reference: 3261676d-d47f-4646-a339-1d0dc0ced595
+        - sceneUuid: 3261676d-d47f-4646-a339-1d0dc0ced595
+          nodeUuid: a973rREvlGKpUGaEW4JVeM
+          reference: 3261676d-d47f-4646-a339-1d0dc0ced595
+      _variants: []
+  - - common.bgmvolume
+    - key: common.bgmvolume
+      value: 背景音
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 3261676d-d47f-4646-a339-1d0dc0ced595
+          nodeUuid: f78ZF/mCdEHoOgCqNSiW/E
+          reference: 3261676d-d47f-4646-a339-1d0dc0ced595
+        - sceneUuid: 3261676d-d47f-4646-a339-1d0dc0ced595
+          nodeUuid: f78ZF/mCdEHoOgCqNSiW/E
+          reference: 3261676d-d47f-4646-a339-1d0dc0ced595
+      _variants: []
+  - - common.sfxvolume
+    - key: common.sfxvolume
+      value: 效果音
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 3261676d-d47f-4646-a339-1d0dc0ced595
+          nodeUuid: 768Yfr4HpB37+w8SbIIoR9
+          reference: 3261676d-d47f-4646-a339-1d0dc0ced595
+        - sceneUuid: 3261676d-d47f-4646-a339-1d0dc0ced595
+          nodeUuid: 768Yfr4HpB37+w8SbIIoR9
+          reference: 3261676d-d47f-4646-a339-1d0dc0ced595
+      _variants: []
+  - - faed2bc6-f53e-4162-a6dd-68820d1cbfdb
+    - key: faed2bc6-f53e-4162-a6dd-68820d1cbfdb
+      value: faed2bc6-f53e-4162-a6dd-68820d1cbfdb
+      type: 1
+      isVariant: false
+      associations:
+        - reference: faed2bc6-f53e-4162-a6dd-68820d1cbfdb
+      _variants: []
+  - - 405cd733-f5ad-4c33-9aac-708a1656d938
+    - key: 405cd733-f5ad-4c33-9aac-708a1656d938
+      value: 405cd733-f5ad-4c33-9aac-708a1656d938
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 405cd733-f5ad-4c33-9aac-708a1656d938
+      _variants: []
+  - - 5e18469c-5435-4b11-9f9b-280011f65ef3
+    - key: 5e18469c-5435-4b11-9f9b-280011f65ef3
+      value: 5e18469c-5435-4b11-9f9b-280011f65ef3
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 5e18469c-5435-4b11-9f9b-280011f65ef3
+      _variants: []
+  - - b8a62d2b-5fbc-42b3-8642-5bcf8fcee908
+    - key: b8a62d2b-5fbc-42b3-8642-5bcf8fcee908
+      value: b8a62d2b-5fbc-42b3-8642-5bcf8fcee908
+      type: 1
+      isVariant: false
+      associations:
+        - reference: b8a62d2b-5fbc-42b3-8642-5bcf8fcee908
+      _variants: []
+  - - de19fdb0-2e0b-4224-bc6f-07bc081df987
+    - key: de19fdb0-2e0b-4224-bc6f-07bc081df987
+      value: de19fdb0-2e0b-4224-bc6f-07bc081df987
+      type: 1
+      isVariant: false
+      associations:
+        - reference: de19fdb0-2e0b-4224-bc6f-07bc081df987
+      _variants: []
+  - - 5c651cdf-7214-4c44-8f74-a55dfd87a28f
+    - key: 5c651cdf-7214-4c44-8f74-a55dfd87a28f
+      value: 5c651cdf-7214-4c44-8f74-a55dfd87a28f
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 5c651cdf-7214-4c44-8f74-a55dfd87a28f
+      _variants: []
+  - - bad37103-24d7-4a06-91f1-b8ccacec8b1d
+    - key: bad37103-24d7-4a06-91f1-b8ccacec8b1d
+      value: bad37103-24d7-4a06-91f1-b8ccacec8b1d
+      type: 1
+      isVariant: false
+      associations:
+        - reference: bad37103-24d7-4a06-91f1-b8ccacec8b1d
+      _variants: []
+  - - a97eeW/OsVFUbfx/g/ZjIX9
+    - key: a97eeW/OsVFUbfx/g/ZjIX9
+      value: label
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 67cb9df6-e56b-4fa5-8c35-90df1b77e342
+          nodeUuid: 56HEEHU6REjL0hHoQWGKkv
+          reference: 67cb9df6-e56b-4fa5-8c35-90df1b77e342
+        - sceneUuid: 67cb9df6-e56b-4fa5-8c35-90df1b77e342
+          nodeUuid: 0ezsDEsDdDBJpeIQ6TI9ED
+          reference: 67cb9df6-e56b-4fa5-8c35-90df1b77e342
+      _variants: []
+  - - 7e999z9o01CNqiovD6bTbKX
+    - key: 7e999z9o01CNqiovD6bTbKX
+      value: button
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 67cb9df6-e56b-4fa5-8c35-90df1b77e342
+          nodeUuid: 3dUXE68rdFDYFgRnU5JqpY
+          reference: 67cb9df6-e56b-4fa5-8c35-90df1b77e342
+        - sceneUuid: 67cb9df6-e56b-4fa5-8c35-90df1b77e342
+          nodeUuid: 027pN9hfVNxp+if38FjKAy
+          reference: 67cb9df6-e56b-4fa5-8c35-90df1b77e342
+        - sceneUuid: 82beb09b-1e54-478c-8f25-c4e00a85e9e8
+          nodeUuid: a0Oij+7xtA26Eo8W6VwovO
+          reference: 82beb09b-1e54-478c-8f25-c4e00a85e9e8
+        - sceneUuid: 67cb9df6-e56b-4fa5-8c35-90df1b77e342
+          nodeUuid: a1LE6v4s1FFb0Y5AWpvBcK
+          reference: 67cb9df6-e56b-4fa5-8c35-90df1b77e342
+        - sceneUuid: 67cb9df6-e56b-4fa5-8c35-90df1b77e342
+          nodeUuid: cdCqaQmpNCtZPfRvGDjuTp
+          reference: 67cb9df6-e56b-4fa5-8c35-90df1b77e342
+      _variants: []
+  - - 9ab46dfb-b57d-4c2d-bfb6-17762d53047b
+    - key: 9ab46dfb-b57d-4c2d-bfb6-17762d53047b
+      value: 9ab46dfb-b57d-4c2d-bfb6-17762d53047b
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 9ab46dfb-b57d-4c2d-bfb6-17762d53047b
+      _variants: []
+  - - 528937a5-9697-406a-b969-12550cf518e0
+    - key: 528937a5-9697-406a-b969-12550cf518e0
+      value: 528937a5-9697-406a-b969-12550cf518e0
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 528937a5-9697-406a-b969-12550cf518e0
+      _variants: []
+  - - 3482b65d-a0a5-43d2-879b-3f62878c0832
+    - key: 3482b65d-a0a5-43d2-879b-3f62878c0832
+      value: 3482b65d-a0a5-43d2-879b-3f62878c0832
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 3482b65d-a0a5-43d2-879b-3f62878c0832
+      _variants: []
+  - - 0e66ff55-f8e0-4943-81a8-da55e334aa7d
+    - key: 0e66ff55-f8e0-4943-81a8-da55e334aa7d
+      value: 0e66ff55-f8e0-4943-81a8-da55e334aa7d
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 0e66ff55-f8e0-4943-81a8-da55e334aa7d
+      _variants: []
+  - - 1a7b21d0-e246-462b-a453-b5b35d8e8a6c
+    - key: 1a7b21d0-e246-462b-a453-b5b35d8e8a6c
+      value: 1a7b21d0-e246-462b-a453-b5b35d8e8a6c
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 1a7b21d0-e246-462b-a453-b5b35d8e8a6c
+      _variants: []
+  - - 7df68a24-3df2-4979-9ccd-257960f66800
+    - key: 7df68a24-3df2-4979-9ccd-257960f66800
+      value: 7df68a24-3df2-4979-9ccd-257960f66800
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 7df68a24-3df2-4979-9ccd-257960f66800
+      _variants: []
+  - - c3777b24-4b52-4054-8376-3517cda991d9
+    - key: c3777b24-4b52-4054-8376-3517cda991d9
+      value: c3777b24-4b52-4054-8376-3517cda991d9
+      type: 1
+      isVariant: false
+      associations:
+        - reference: c3777b24-4b52-4054-8376-3517cda991d9
+      _variants: []
+  - - 61adb5b4-0a74-42f8-a1c4-971fe0ebaf50
+    - key: 61adb5b4-0a74-42f8-a1c4-971fe0ebaf50
+      value: 61adb5b4-0a74-42f8-a1c4-971fe0ebaf50
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 61adb5b4-0a74-42f8-a1c4-971fe0ebaf50
+      _variants: []
+  - - c98920c4-c448-4e98-a6de-29c2ad115e0e
+    - key: c98920c4-c448-4e98-a6de-29c2ad115e0e
+      value: c98920c4-c448-4e98-a6de-29c2ad115e0e
+      type: 1
+      isVariant: false
+      associations:
+        - reference: c98920c4-c448-4e98-a6de-29c2ad115e0e
+      _variants: []
+  - - f3b74450-1bfd-459b-8369-db8e2d40f2b1
+    - key: f3b74450-1bfd-459b-8369-db8e2d40f2b1
+      value: f3b74450-1bfd-459b-8369-db8e2d40f2b1
+      type: 1
+      isVariant: false
+      associations:
+        - reference: f3b74450-1bfd-459b-8369-db8e2d40f2b1
+      _variants: []
+  - - common.cancel
+    - key: common.cancel
+      value: 取消
+      type: 0
+      isVariant: false
+      associations:
+        - reference: a9e10d61-4f1b-490c-99f9-eb574ebc4388
+      _variants: []
+  - - common.save
+    - key: common.save
+      value: 保存
+      type: 0
+      isVariant: false
+      associations:
+        - reference: a9e10d61-4f1b-490c-99f9-eb574ebc4388
+      _variants: []
+  - - common.settings
+    - key: common.settings
+      value: 设置
+      type: 0
+      isVariant: false
+      associations:
+        - reference: a9e10d61-4f1b-490c-99f9-eb574ebc4388
+      _variants: []
+  - - loading.hint
+    - key: loading.hint
+      value: 点击屏幕继续
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: a3ba8f3d-dead-4964-b78d-c535ee199cdc
+          nodeUuid: d1fX4bwUVGaK65eD0+wYB9
+          reference: a3ba8f3d-dead-4964-b78d-c535ee199cdc
+        - sceneUuid: a3ba8f3d-dead-4964-b78d-c535ee199cdc
+          nodeUuid: 21PODpPIVODYKY2BB41RzS
+          reference: a3ba8f3d-dead-4964-b78d-c535ee199cdc
+      _variants: []
+languageConfig:
+  bcp47Tag: zh-Hans-CN
+  translateFinished: 102
+  translateTotal: 102
+  compileFinished: 0
+  compileTotal: 33

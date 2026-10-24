@@ -1,0 +1,25 @@
+{
+  "name": "crashfever_replica",
+  "uuid": "be8c3826-902f-44ec-ae40-b5032c052097",
+  "creator": {
+    "version": "3.8.8",
+    "registry": {
+      "remote": {}
+    },
+    "dependencies": {
+      "localization-editor": "1.0.4"
+    }
+  },
+  "scripts": {
+    "lint": "eslint assets/Scripts tools",
+    "lint:app": "eslint assets/Scripts/Model/App",
+    "test:log": "tsc -p tools/logtest/tsconfig.json && node --test tools/logtest/log.test.mjs",
+    "test:save": "tsc -p tools/savetest/tsconfig.json && node --test tools/savetest/save.test.mjs",
+    "test:confirm": "node --test tools/uitest/confirm.test.mjs"
+  },
+  "devDependencies": {
+    "eslint": "^10.13.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.71.2"
+  }
+}

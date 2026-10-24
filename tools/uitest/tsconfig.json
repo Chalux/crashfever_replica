@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "module": "CommonJS",
+        "moduleResolution": "Node",
+        "experimentalDecorators": true,
+        "skipLibCheck": true,
+        "strict": false,
+        "noEmit": false,
+        "outDir": "../../.uitest-out",
+        "rootDir": "../..",
+        "baseUrl": ".",
+        "paths": {
+            "cc": ["./cc-stub.ts"]
+        },
+        "types": []
+    },
+    "include": ["../../assets/Scripts/Frame/UI/**/*.ts", "../../assets/Scripts/Frame/**/*.ts", "*.ts"]
+}

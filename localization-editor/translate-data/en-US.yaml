@@ -1,0 +1,145 @@
+locale: en-US
+items:
+  - - title.hint
+    - key: title.hint
+      value: tap screen to continue
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 6a643f7a-1c1f-499e-8a57-df2a48a1fdb9
+          nodeUuid: beVeI3OUtNO4zqPdzxPldP
+          reference: 6a643f7a-1c1f-499e-8a57-df2a48a1fdb9
+        - sceneUuid: 6a643f7a-1c1f-499e-8a57-df2a48a1fdb9
+          nodeUuid: beVeI3OUtNO4zqPdzxPldP
+          reference: 6a643f7a-1c1f-499e-8a57-df2a48a1fdb9
+      _variants: []
+  - - title.progress
+    - key: title.progress
+      value: loading...{progress}
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 6a643f7a-1c1f-499e-8a57-df2a48a1fdb9
+          nodeUuid: beVeI3OUtNO4zqPdzxPldP
+          reference: 6a643f7a-1c1f-499e-8a57-df2a48a1fdb9
+        - sceneUuid: 6a643f7a-1c1f-499e-8a57-df2a48a1fdb9
+          nodeUuid: beVeI3OUtNO4zqPdzxPldP
+          reference: 6a643f7a-1c1f-499e-8a57-df2a48a1fdb9
+      _variants: []
+  - - loading.progress
+    - key: loading.progress
+      value: loading...{progress}
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: a3ba8f3d-dead-4964-b78d-c535ee199cdc
+          nodeUuid: d1fX4bwUVGaK65eD0+wYB9
+          reference: a3ba8f3d-dead-4964-b78d-c535ee199cdc
+      _variants: []
+  - - loading.hint
+    - key: loading.hint
+      value: loading...
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: a3ba8f3d-dead-4964-b78d-c535ee199cdc
+          nodeUuid: d1fX4bwUVGaK65eD0+wYB9
+          reference: a3ba8f3d-dead-4964-b78d-c535ee199cdc
+      _variants: []
+  - - game.title
+    - key: game.title
+      value: CrashFever-Replica
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 82beb09b-1e54-478c-8f25-c4e00a85e9e8
+          nodeUuid: d7gATppudBeoVd9cSzU2hr
+          reference: 82beb09b-1e54-478c-8f25-c4e00a85e9e8
+        - sceneUuid: 82beb09b-1e54-478c-8f25-c4e00a85e9e8
+          nodeUuid: d7gATppudBeoVd9cSzU2hr
+          reference: 82beb09b-1e54-478c-8f25-c4e00a85e9e8
+      _variants: []
+  - - button.teamedit
+    - key: button.teamedit
+      value: TeamEdit
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: d54f7a21-b78f-4922-9f53-b918dfd31af1
+          nodeUuid: f4g9lKlq9CzKb6XIKa1QB6
+          reference: d54f7a21-b78f-4922-9f53-b918dfd31af1
+        - sceneUuid: d54f7a21-b78f-4922-9f53-b918dfd31af1
+          nodeUuid: f4g9lKlq9CzKb6XIKa1QB6
+          reference: d54f7a21-b78f-4922-9f53-b918dfd31af1
+      _variants: []
+  - - button.stagepick
+    - key: button.stagepick
+      value: Stage
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: d54f7a21-b78f-4922-9f53-b918dfd31af1
+          nodeUuid: 47uwvI4YZA7L2seqEX8pnO
+          reference: d54f7a21-b78f-4922-9f53-b918dfd31af1
+        - sceneUuid: d54f7a21-b78f-4922-9f53-b918dfd31af1
+          nodeUuid: 47uwvI4YZA7L2seqEX8pnO
+          reference: d54f7a21-b78f-4922-9f53-b918dfd31af1
+      _variants: []
+  - - button.setting
+    - key: button.setting
+      value: Setting
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: d54f7a21-b78f-4922-9f53-b918dfd31af1
+          nodeUuid: 27ktEQj0FDTKb0S+BbwPRS
+          reference: d54f7a21-b78f-4922-9f53-b918dfd31af1
+        - sceneUuid: d54f7a21-b78f-4922-9f53-b918dfd31af1
+          nodeUuid: 27ktEQj0FDTKb0S+BbwPRS
+          reference: d54f7a21-b78f-4922-9f53-b918dfd31af1
+      _variants: []
+  - - common.mastervolume
+    - key: common.mastervolume
+      value: MasterVolume
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 3261676d-d47f-4646-a339-1d0dc0ced595
+          nodeUuid: a973rREvlGKpUGaEW4JVeM
+          reference: 3261676d-d47f-4646-a339-1d0dc0ced595
+        - sceneUuid: 3261676d-d47f-4646-a339-1d0dc0ced595
+          nodeUuid: a973rREvlGKpUGaEW4JVeM
+          reference: 3261676d-d47f-4646-a339-1d0dc0ced595
+      _variants: []
+  - - common.bgmvolume
+    - key: common.bgmvolume
+      value: BgmVolume
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 3261676d-d47f-4646-a339-1d0dc0ced595
+          nodeUuid: f78ZF/mCdEHoOgCqNSiW/E
+          reference: 3261676d-d47f-4646-a339-1d0dc0ced595
+        - sceneUuid: 3261676d-d47f-4646-a339-1d0dc0ced595
+          nodeUuid: f78ZF/mCdEHoOgCqNSiW/E
+          reference: 3261676d-d47f-4646-a339-1d0dc0ced595
+      _variants: []
+  - - common.sfxvolume
+    - key: common.sfxvolume
+      value: SfxVolume
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 3261676d-d47f-4646-a339-1d0dc0ced595
+          nodeUuid: 768Yfr4HpB37+w8SbIIoR9
+          reference: 3261676d-d47f-4646-a339-1d0dc0ced595
+        - sceneUuid: 3261676d-d47f-4646-a339-1d0dc0ced595
+          nodeUuid: 768Yfr4HpB37+w8SbIIoR9
+          reference: 3261676d-d47f-4646-a339-1d0dc0ced595
+      _variants: []
+languageConfig:
+  bcp47Tag: en-US
+  translateFinished: 69
+  translateTotal: 140
+  compileFinished: 0
+  compileTotal: 11
