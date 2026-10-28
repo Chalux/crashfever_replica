@@ -5,6 +5,12 @@
   /* Add your custom configuration here. */
   "compilerOptions": {
     "moduleResolution": "bundler",
-    "strict": false
-  }
+    "strict": false,
+    /* 引擎声明文件（cc.d.ts）由 Cocos Creator 内置 TS 版本生成，用工作区 TS 5.9 检查会产生大量无关报错 */
+    "skipLibCheck": true,
+    // 与 tools/*/tsconfig.json 保持一致，避免 Object.values 等 ES2017+ API 被误报
+    "lib": ["ES2020", "DOM"]
+  },
+  /* 第三方编辑器扩展、生成目录与独立测试工程不参与本工程的类型检查 */
+  "exclude": ["node_modules", "temp", "library", "local", "build", "profiles", "extensions", "tools"]
 }

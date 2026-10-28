@@ -4,6 +4,8 @@ import { TitlePayload, TitleWin } from './UI/TitleWin';
 import { SoundManager } from '../../Frame/Audio/SoundManager';
 import { Sound } from '../../Frame/Audio/Sound';
 import { SettingsService } from './Save/SettingsService';
+import { RedDot } from '../../Frame/RedDot/index';
+import { registerAppRedDots } from './RedDot/AppRedDotTree';
 const { ccclass, property } = _decorator;
 
 @ccclass('AppEntry')
@@ -29,6 +31,8 @@ export class AppEntry extends Component {
 
         Sound.Configure(this._soundManager);
         SettingsService.Initialize();
+        RedDot.Initialize();
+        registerAppRedDots();
         Sound.PlayBgm("audio/bgm/00_System");
         // Sound.PlaySfx("audio/sfx/candidates/sse_009");
 
@@ -86,6 +90,7 @@ export class AppEntry extends Component {
     onDestroy() {
         this._uiManager?.dispose();
         this._uiManager = null;
+        RedDot.Dispose();
     }
 }
 

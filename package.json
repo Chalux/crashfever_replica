@@ -15,7 +15,8 @@
     "lint:app": "eslint assets/Scripts/Model/App",
     "test:log": "tsc -p tools/logtest/tsconfig.json && node --test tools/logtest/log.test.mjs",
     "test:save": "tsc -p tools/savetest/tsconfig.json && node --test tools/savetest/save.test.mjs",
-    "test:confirm": "node --test tools/uitest/confirm.test.mjs"
+    "test:confirm": "node --test tools/uitest/confirm.test.mjs",
+    "test:reddot": "tsc -p tools/reddottest/tsconfig.json && node --test tools/reddottest/reddot.test.mjs"
   },
   "devDependencies": {
     "eslint": "^10.13.0",

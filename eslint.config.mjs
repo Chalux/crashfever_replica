@@ -14,6 +14,7 @@ export default [
             '.uitest-out/**',
             '.logtest-out/**',
             '.savetest-out/**',
+            '.reddottest-out/**',
         ],
     },
     {

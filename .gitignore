@@ -19,6 +19,7 @@ node_modules/
 .uitest-out/
 .logtest-out/
 .savetest-out/
+.reddottest-out/
 
 #//////////////////////////
 # VSCode

@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "strict": true,
+    "lib": ["ES2020", "DOM"],
+    "types": [],
+    "rootDir": "../..",
+    "outDir": "../../.reddottest-out"
+  },
+  "include": [
+    "../../assets/Scripts/Frame/RedDot/RedDotStore.ts",
+    "../../assets/Scripts/Frame/RedDot/RedDotFormat.ts",
+    "../../assets/Scripts/Frame/Log/**/*.ts"
+  ]
+}
