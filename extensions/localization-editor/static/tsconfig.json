@@ -22,7 +22,6 @@
         "emitDeclarationOnly": true,
         "experimentalDecorators": true,
         "skipLibCheck": true,
-        "typeRoots": ["../@types"],
         "types": [
             "intl",
             "@cocos/creator-types/editor",

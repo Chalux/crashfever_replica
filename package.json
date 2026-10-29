@@ -19,6 +19,8 @@
     "test:reddot": "tsc -p tools/reddottest/tsconfig.json && node --test tools/reddottest/reddot.test.mjs"
   },
   "devDependencies": {
+    "@cocos/creator-types": "^3.8.8",
+    "@types/intl": "^1.2.2",
     "eslint": "^10.13.0",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.71.2"
