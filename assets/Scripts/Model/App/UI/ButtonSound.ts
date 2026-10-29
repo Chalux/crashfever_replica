@@ -4,7 +4,7 @@ const { ccclass, property } = _decorator;
 
 @ccclass('ButtonSound')
 export class ButtonSound extends Component {
-    @property({ type: String, visible: true })
+    @property({ visible: true })
     private _soundPath: string = 'audio/sfx/candidates/sse_009';
 
     onLoad(): void {

@@ -15,5 +15,5 @@
         },
         "types": []
     },
-    "include": ["../../assets/Scripts/Frame/UI/**/*.ts", "../../assets/Scripts/Frame/**/*.ts", "*.ts"]
+    "include": ["../../assets/Scripts/Frame/UI/**/*.ts", "../../assets/Scripts/Frame/Log/**/*.ts", "../../assets/Scripts/Frame/Event/**/*.ts", "*.ts"]
 }

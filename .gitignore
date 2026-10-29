@@ -20,6 +20,7 @@ node_modules/
 .logtest-out/
 .savetest-out/
 .reddottest-out/
+.reddottest-badge-out/
 
 #//////////////////////////
 # VSCode
@@ -59,6 +60,7 @@ node_modules/
 *.backup
 *.before-*
 *~
+__pycache__/
 .DS_Store
 Thumbs.db
 Desktop.ini

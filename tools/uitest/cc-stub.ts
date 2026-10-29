@@ -238,9 +238,18 @@ export const _decorator = {
 };
 
 export const CCInteger = 'cc.Integer';
+export const CCString = 'cc.String';
+export const CCBoolean = 'cc.Boolean';
+export const CCFloat = 'cc.Float';
 
 export class Button extends Component {
     public static readonly EventType = { CLICK: 'click' };
+}
+
+/** 仅满足 RedDotBadge 等视图脚本的类型/运行时需求。 */
+export class Label extends Component {
+    public string = '';
+    public fontSize = 0;
 }
 
 export class Toggle extends Component {

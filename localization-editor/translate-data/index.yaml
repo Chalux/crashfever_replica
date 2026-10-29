@@ -1,148 +1,5 @@
 locale: index
 items:
-  - - title.hint
-    - key: title.hint
-      value: ''
-      type: 2
-      isVariant: false
-      associations:
-        - sceneUuid: 82beb09b-1e54-478c-8f25-c4e00a85e9e8
-          nodeUuid: 4e7svuuj1IKY34pJbr1x7x
-          reference: 82beb09b-1e54-478c-8f25-c4e00a85e9e8
-      _variants: []
-  - - title.progress
-    - key: title.progress
-      value: ''
-      type: 2
-      isVariant: false
-      associations:
-        - sceneUuid: 6a643f7a-1c1f-499e-8a57-df2a48a1fdb9
-          nodeUuid: beVeI3OUtNO4zqPdzxPldP
-          reference: 6a643f7a-1c1f-499e-8a57-df2a48a1fdb9
-        - sceneUuid: a3ba8f3d-dead-4964-b78d-c535ee199cdc
-          nodeUuid: d1fX4bwUVGaK65eD0+wYB9
-          reference: a3ba8f3d-dead-4964-b78d-c535ee199cdc
-      _variants: []
-  - - loading.hint
-    - key: loading.hint
-      value: ''
-      type: 2
-      isVariant: false
-      associations:
-        - sceneUuid: a3ba8f3d-dead-4964-b78d-c535ee199cdc
-          nodeUuid: d1fX4bwUVGaK65eD0+wYB9
-          reference: a3ba8f3d-dead-4964-b78d-c535ee199cdc
-        - sceneUuid: a3ba8f3d-dead-4964-b78d-c535ee199cdc
-          nodeUuid: 21PODpPIVODYKY2BB41RzS
-          reference: a3ba8f3d-dead-4964-b78d-c535ee199cdc
-      _variants: []
-  - - loading.progress
-    - key: loading.progress
-      value: ''
-      type: 2
-      isVariant: false
-      associations:
-        - sceneUuid: a3ba8f3d-dead-4964-b78d-c535ee199cdc
-          nodeUuid: d1fX4bwUVGaK65eD0+wYB9
-          reference: a3ba8f3d-dead-4964-b78d-c535ee199cdc
-      _variants: []
-  - - game.title
-    - key: game.title
-      value: ''
-      type: 2
-      isVariant: false
-      associations:
-        - sceneUuid: 82beb09b-1e54-478c-8f25-c4e00a85e9e8
-          nodeUuid: d7gATppudBeoVd9cSzU2hr
-          reference: 82beb09b-1e54-478c-8f25-c4e00a85e9e8
-        - sceneUuid: 82beb09b-1e54-478c-8f25-c4e00a85e9e8
-          nodeUuid: d7gATppudBeoVd9cSzU2hr
-          reference: 82beb09b-1e54-478c-8f25-c4e00a85e9e8
-        - sceneUuid: 82beb09b-1e54-478c-8f25-c4e00a85e9e8
-          nodeUuid: eeSK0n76VLeIVZxi4OGTrX
-          reference: 82beb09b-1e54-478c-8f25-c4e00a85e9e8
-        - sceneUuid: d54f7a21-b78f-4922-9f53-b918dfd31af1
-          nodeUuid: 6cJ/rAkmpG15YLjJnu370T
-          reference: d54f7a21-b78f-4922-9f53-b918dfd31af1
-      _variants: []
-  - - button.teamedit
-    - key: button.teamedit
-      value: ''
-      type: 2
-      isVariant: false
-      associations:
-        - sceneUuid: d54f7a21-b78f-4922-9f53-b918dfd31af1
-          nodeUuid: f4g9lKlq9CzKb6XIKa1QB6
-          reference: d54f7a21-b78f-4922-9f53-b918dfd31af1
-        - sceneUuid: d54f7a21-b78f-4922-9f53-b918dfd31af1
-          nodeUuid: f4g9lKlq9CzKb6XIKa1QB6
-          reference: d54f7a21-b78f-4922-9f53-b918dfd31af1
-      _variants: []
-  - - button.stagepick
-    - key: button.stagepick
-      value: ''
-      type: 2
-      isVariant: false
-      associations:
-        - sceneUuid: d54f7a21-b78f-4922-9f53-b918dfd31af1
-          nodeUuid: 47uwvI4YZA7L2seqEX8pnO
-          reference: d54f7a21-b78f-4922-9f53-b918dfd31af1
-        - sceneUuid: d54f7a21-b78f-4922-9f53-b918dfd31af1
-          nodeUuid: 47uwvI4YZA7L2seqEX8pnO
-          reference: d54f7a21-b78f-4922-9f53-b918dfd31af1
-      _variants: []
-  - - button.setting
-    - key: button.setting
-      value: ''
-      type: 2
-      isVariant: false
-      associations:
-        - sceneUuid: d54f7a21-b78f-4922-9f53-b918dfd31af1
-          nodeUuid: 27ktEQj0FDTKb0S+BbwPRS
-          reference: d54f7a21-b78f-4922-9f53-b918dfd31af1
-        - sceneUuid: d54f7a21-b78f-4922-9f53-b918dfd31af1
-          nodeUuid: 27ktEQj0FDTKb0S+BbwPRS
-          reference: d54f7a21-b78f-4922-9f53-b918dfd31af1
-      _variants: []
-  - - common.mastervolume
-    - key: common.mastervolume
-      value: ''
-      type: 2
-      isVariant: false
-      associations:
-        - sceneUuid: 3261676d-d47f-4646-a339-1d0dc0ced595
-          nodeUuid: a973rREvlGKpUGaEW4JVeM
-          reference: 3261676d-d47f-4646-a339-1d0dc0ced595
-        - sceneUuid: 3261676d-d47f-4646-a339-1d0dc0ced595
-          nodeUuid: a973rREvlGKpUGaEW4JVeM
-          reference: 3261676d-d47f-4646-a339-1d0dc0ced595
-      _variants: []
-  - - common.bgmvolume
-    - key: common.bgmvolume
-      value: ''
-      type: 2
-      isVariant: false
-      associations:
-        - sceneUuid: 3261676d-d47f-4646-a339-1d0dc0ced595
-          nodeUuid: f78ZF/mCdEHoOgCqNSiW/E
-          reference: 3261676d-d47f-4646-a339-1d0dc0ced595
-        - sceneUuid: 3261676d-d47f-4646-a339-1d0dc0ced595
-          nodeUuid: f78ZF/mCdEHoOgCqNSiW/E
-          reference: 3261676d-d47f-4646-a339-1d0dc0ced595
-      _variants: []
-  - - common.sfxvolume
-    - key: common.sfxvolume
-      value: ''
-      type: 2
-      isVariant: false
-      associations:
-        - sceneUuid: 3261676d-d47f-4646-a339-1d0dc0ced595
-          nodeUuid: 768Yfr4HpB37+w8SbIIoR9
-          reference: 3261676d-d47f-4646-a339-1d0dc0ced595
-        - sceneUuid: 3261676d-d47f-4646-a339-1d0dc0ced595
-          nodeUuid: 768Yfr4HpB37+w8SbIIoR9
-          reference: 3261676d-d47f-4646-a339-1d0dc0ced595
-      _variants: []
   - - faed2bc6-f53e-4162-a6dd-68820d1cbfdb
     - key: faed2bc6-f53e-4162-a6dd-68820d1cbfdb
       value: ''
@@ -198,20 +55,6 @@ items:
       isVariant: false
       associations:
         - reference: bad37103-24d7-4a06-91f1-b8ccacec8b1d
-      _variants: []
-  - - a97eeW/OsVFUbfx/g/ZjIX9
-    - key: a97eeW/OsVFUbfx/g/ZjIX9
-      value: ''
-      type: 2
-      isVariant: false
-      associations: []
-      _variants: []
-  - - 7e999z9o01CNqiovD6bTbKX
-    - key: 7e999z9o01CNqiovD6bTbKX
-      value: ''
-      type: 2
-      isVariant: false
-      associations: []
       _variants: []
   - - 9ab46dfb-b57d-4c2d-bfb6-17762d53047b
     - key: 9ab46dfb-b57d-4c2d-bfb6-17762d53047b
@@ -293,33 +136,548 @@ items:
       associations:
         - reference: f3b74450-1bfd-459b-8369-db8e2d40f2b1
       _variants: []
-  - - common.cancel
-    - key: common.cancel
+  - - a4766b36-ca4a-41a1-98b2-14614b5b6291
+    - key: a4766b36-ca4a-41a1-98b2-14614b5b6291
       value: ''
-      type: 0
+      type: 1
       isVariant: false
       associations:
-        - reference: a9e10d61-4f1b-490c-99f9-eb574ebc4388
+        - reference: a4766b36-ca4a-41a1-98b2-14614b5b6291
       _variants: []
-  - - common.save
-    - key: common.save
+  - - 5da6f7c2-d081-46c4-9f7d-86d47dd47dd7
+    - key: 5da6f7c2-d081-46c4-9f7d-86d47dd47dd7
       value: ''
-      type: 0
+      type: 1
       isVariant: false
       associations:
-        - reference: a9e10d61-4f1b-490c-99f9-eb574ebc4388
+        - reference: 5da6f7c2-d081-46c4-9f7d-86d47dd47dd7
+      _variants: []
+  - - e409f8e2-f4ad-4d10-ae64-1a39438ef4fe
+    - key: e409f8e2-f4ad-4d10-ae64-1a39438ef4fe
+      value: ''
+      type: 1
+      isVariant: false
+      associations:
+        - reference: e409f8e2-f4ad-4d10-ae64-1a39438ef4fe
+      _variants: []
+  - - a45fbfc6-7238-43eb-918b-294dd29205fd
+    - key: a45fbfc6-7238-43eb-918b-294dd29205fd
+      value: ''
+      type: 1
+      isVariant: false
+      associations:
+        - reference: a45fbfc6-7238-43eb-918b-294dd29205fd
+      _variants: []
+  - - d1272519-95d1-458e-8a8d-4d8318a4681c
+    - key: d1272519-95d1-458e-8a8d-4d8318a4681c
+      value: ''
+      type: 1
+      isVariant: false
+      associations:
+        - reference: d1272519-95d1-458e-8a8d-4d8318a4681c
+      _variants: []
+  - - 9a7c4905-3af4-45b5-9394-b8cdb9494788
+    - key: 9a7c4905-3af4-45b5-9394-b8cdb9494788
+      value: ''
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 9a7c4905-3af4-45b5-9394-b8cdb9494788
+      _variants: []
+  - - c7b87689-0824-499e-9fa8-57524c0c8dd3
+    - key: c7b87689-0824-499e-9fa8-57524c0c8dd3
+      value: ''
+      type: 1
+      isVariant: false
+      associations:
+        - reference: c7b87689-0824-499e-9fa8-57524c0c8dd3
+      _variants: []
+  - - c1204cb9-b2bb-497f-83c9-cb2511d0e0b6
+    - key: c1204cb9-b2bb-497f-83c9-cb2511d0e0b6
+      value: ''
+      type: 1
+      isVariant: false
+      associations:
+        - reference: c1204cb9-b2bb-497f-83c9-cb2511d0e0b6
+      _variants: []
+  - - cd156c77-7667-46af-ac89-6077fe96477e
+    - key: cd156c77-7667-46af-ac89-6077fe96477e
+      value: ''
+      type: 1
+      isVariant: false
+      associations:
+        - reference: cd156c77-7667-46af-ac89-6077fe96477e
+      _variants: []
+  - - 047207ce-5156-442c-978b-d7e92bf73a69
+    - key: 047207ce-5156-442c-978b-d7e92bf73a69
+      value: ''
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 047207ce-5156-442c-978b-d7e92bf73a69
+      _variants: []
+  - - 4a98b220-df4c-4d52-9c1a-cd748514a73e
+    - key: 4a98b220-df4c-4d52-9c1a-cd748514a73e
+      value: ''
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 4a98b220-df4c-4d52-9c1a-cd748514a73e
+      _variants: []
+  - - 55bb6970-3e1a-42f8-8fa0-9edb9d9be87e
+    - key: 55bb6970-3e1a-42f8-8fa0-9edb9d9be87e
+      value: ''
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 55bb6970-3e1a-42f8-8fa0-9edb9d9be87e
+      _variants: []
+  - - 04e11569-937c-47c6-b8fc-585e98ffe04f
+    - key: 04e11569-937c-47c6-b8fc-585e98ffe04f
+      value: ''
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 04e11569-937c-47c6-b8fc-585e98ffe04f
+      _variants: []
+  - - c2f098aa-da89-4bb5-ab61-cb0174e3b426
+    - key: c2f098aa-da89-4bb5-ab61-cb0174e3b426
+      value: ''
+      type: 1
+      isVariant: false
+      associations:
+        - reference: c2f098aa-da89-4bb5-ab61-cb0174e3b426
+      _variants: []
+  - - 560111b8-0f20-4e75-8ab2-81a36fb537b4
+    - key: 560111b8-0f20-4e75-8ab2-81a36fb537b4
+      value: ''
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 560111b8-0f20-4e75-8ab2-81a36fb537b4
+      _variants: []
+  - - 312e9463-dc16-4c4a-826e-4ad276261ee5
+    - key: 312e9463-dc16-4c4a-826e-4ad276261ee5
+      value: ''
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 312e9463-dc16-4c4a-826e-4ad276261ee5
+      _variants: []
+  - - caa13cd1-ee2f-4dd0-a1b2-735964d244a8
+    - key: caa13cd1-ee2f-4dd0-a1b2-735964d244a8
+      value: ''
+      type: 1
+      isVariant: false
+      associations:
+        - reference: caa13cd1-ee2f-4dd0-a1b2-735964d244a8
+      _variants: []
+  - - 0389444d-f7bf-457f-bb9a-db2f5d3c0d77
+    - key: 0389444d-f7bf-457f-bb9a-db2f5d3c0d77
+      value: ''
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 0389444d-f7bf-457f-bb9a-db2f5d3c0d77
+      _variants: []
+  - - a2d3ba6c-1941-463a-bbc1-e4ee9deeaa80
+    - key: a2d3ba6c-1941-463a-bbc1-e4ee9deeaa80
+      value: ''
+      type: 1
+      isVariant: false
+      associations:
+        - reference: a2d3ba6c-1941-463a-bbc1-e4ee9deeaa80
+      _variants: []
+  - - main.teamUnavailable
+    - key: main.teamUnavailable
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - main.stageUnavailable
+    - key: main.stageUnavailable
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - common.understood
+    - key: common.understood
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - common.confirmTitle
+    - key: common.confirmTitle
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - common.actionFailed
+    - key: common.actionFailed
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - common.ok
+    - key: common.ok
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - common.close
+    - key: common.close
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - common.import
+    - key: common.import
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - settings.saveFailed
+    - key: settings.saveFailed
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - settings.importFailed
+    - key: settings.importFailed
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - settings.importTitle
+    - key: settings.importTitle
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - settings.importConfirm
+    - key: settings.importConfirm
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - settings.readFailed
+    - key: settings.readFailed
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - title.hint
+    - key: title.hint
+      value: ''
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 82beb09b-1e54-478c-8f25-c4e00a85e9e8
+          nodeUuid: 4987884f796a44459d7a00
+          reference: 82beb09b-1e54-478c-8f25-c4e00a85e9e8
+      _variants: []
+  - - title.progress
+    - key: title.progress
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - game.title
+    - key: game.title
+      value: ''
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: a3ba8f3d-dead-4964-b78d-c535ee199cdc
+          nodeUuid: 2c3acf6b213d40709ac035
+          reference: a3ba8f3d-dead-4964-b78d-c535ee199cdc
+        - sceneUuid: d54f7a21-b78f-4922-9f53-b918dfd31af1
+          nodeUuid: 73153e10af9144b3aa6baa
+          reference: d54f7a21-b78f-4922-9f53-b918dfd31af1
+      _variants: []
+  - - game.title.display
+    - key: game.title.display
+      value: ''
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 82beb09b-1e54-478c-8f25-c4e00a85e9e8
+          nodeUuid: e6a4a00573284d1d9ad92c
+          reference: 82beb09b-1e54-478c-8f25-c4e00a85e9e8
+      _variants: []
+  - - game.subtitle
+    - key: game.subtitle
+      value: ''
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 82beb09b-1e54-478c-8f25-c4e00a85e9e8
+          nodeUuid: f8f7750713a44852a7c44a
+          reference: 82beb09b-1e54-478c-8f25-c4e00a85e9e8
+      _variants: []
+  - - title.offlineHint
+    - key: title.offlineHint
+      value: ''
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 82beb09b-1e54-478c-8f25-c4e00a85e9e8
+          nodeUuid: 626e0f8f1ac1403dbc4cbd
+          reference: 82beb09b-1e54-478c-8f25-c4e00a85e9e8
+      _variants: []
+  - - main.title
+    - key: main.title
+      value: ''
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: d54f7a21-b78f-4922-9f53-b918dfd31af1
+          nodeUuid: 9d41edc27d294518968b32
+          reference: d54f7a21-b78f-4922-9f53-b918dfd31af1
+      _variants: []
+  - - main.offlineHint
+    - key: main.offlineHint
+      value: ''
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: d54f7a21-b78f-4922-9f53-b918dfd31af1
+          nodeUuid: 601647996a124fc09c80fd
+          reference: d54f7a21-b78f-4922-9f53-b918dfd31af1
+      _variants: []
+  - - button.teamedit
+    - key: button.teamedit
+      value: ''
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: d54f7a21-b78f-4922-9f53-b918dfd31af1
+          nodeUuid: 5372efd9a31541cb8fd8be
+          reference: d54f7a21-b78f-4922-9f53-b918dfd31af1
+      _variants: []
+  - - button.stagepick
+    - key: button.stagepick
+      value: ''
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: d54f7a21-b78f-4922-9f53-b918dfd31af1
+          nodeUuid: ab6bf33279a2436d9a6758
+          reference: d54f7a21-b78f-4922-9f53-b918dfd31af1
+      _variants: []
+  - - button.setting
+    - key: button.setting
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - common.mastervolume
+    - key: common.mastervolume
+      value: ''
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 3261676d-d47f-4646-a339-1d0dc0ced595
+          nodeUuid: 3f7c8d80c6da446bab0141
+          reference: 3261676d-d47f-4646-a339-1d0dc0ced595
+      _variants: []
+  - - common.bgmvolume
+    - key: common.bgmvolume
+      value: ''
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 3261676d-d47f-4646-a339-1d0dc0ced595
+          nodeUuid: 37df007a66d0492c8dfe55
+          reference: 3261676d-d47f-4646-a339-1d0dc0ced595
+      _variants: []
+  - - common.sfxvolume
+    - key: common.sfxvolume
+      value: ''
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 3261676d-d47f-4646-a339-1d0dc0ced595
+          nodeUuid: cd2307e7201b4233a81e25
+          reference: 3261676d-d47f-4646-a339-1d0dc0ced595
       _variants: []
   - - common.settings
     - key: common.settings
       value: ''
-      type: 0
+      type: 2
       isVariant: false
       associations:
-        - reference: a9e10d61-4f1b-490c-99f9-eb574ebc4388
+        - sceneUuid: d54f7a21-b78f-4922-9f53-b918dfd31af1
+          nodeUuid: 409dd9aa0edb4ac28c3c84
+          reference: d54f7a21-b78f-4922-9f53-b918dfd31af1
+      _variants: []
+  - - common.save
+    - key: common.save
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - common.cancel
+    - key: common.cancel
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - common.confirm
+    - key: common.confirm
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - common.retry
+    - key: common.retry
+      value: ''
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: a3ba8f3d-dead-4964-b78d-c535ee199cdc
+          nodeUuid: feViDaI0ZIf4ND2iUWNvT2
+          reference: a3ba8f3d-dead-4964-b78d-c535ee199cdc
+      _variants: []
+  - - common.importSave
+    - key: common.importSave
+      value: ''
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 3261676d-d47f-4646-a339-1d0dc0ced595
+          nodeUuid: 4d88702149614d6cbfadb8
+          reference: 3261676d-d47f-4646-a339-1d0dc0ced595
+      _variants: []
+  - - common.exportSave
+    - key: common.exportSave
+      value: ''
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 3261676d-d47f-4646-a339-1d0dc0ced595
+          nodeUuid: a90551b805b8466abff2ba
+          reference: 3261676d-d47f-4646-a339-1d0dc0ced595
+      _variants: []
+  - - loading.hint
+    - key: loading.hint
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - loading.progress
+    - key: loading.progress
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - loading.preparing
+    - key: loading.preparing
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - loading.reloading
+    - key: loading.reloading
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - loading.initsound
+    - key: loading.initsound
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - loading.initsounderror
+    - key: loading.initsounderror
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - loading.initsettings
+    - key: loading.initsettings
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - loading.initsettingserror
+    - key: loading.initsettingserror
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - loading.initreddots
+    - key: loading.initreddots
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - loading.initreddotserror
+    - key: loading.initreddotserror
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - loading.inittitlewin
+    - key: loading.inittitlewin
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - loading.inittitlewinerror
+    - key: loading.inittitlewinerror
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - loading.initcomplete
+    - key: loading.initcomplete
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - loading.failed
+    - key: loading.failed
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
       _variants: []
 languageConfig:
   bcp47Tag: index
-  translateFinished: 102
+  translateFinished: 360
   translateTotal: 0
   compileFinished: 0
   compileTotal: 0

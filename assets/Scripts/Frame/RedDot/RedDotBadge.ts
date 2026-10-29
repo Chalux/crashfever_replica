@@ -1,14 +1,13 @@
-import { Component, Node, Label, _decorator } from "cc";
+import { Component, Node, Label, _decorator, CCFloat } from "cc";
 import { RedDot } from "./RedDot";
 import { BindingScope } from "../UI";
 import { formatRedDotCount } from "./RedDotFormat";
-import { Log, LogOptions } from "../Log";
 
 const { ccclass, property } = _decorator;
 
 @ccclass('RedDotBadge')
 export class RedDotBadge extends Component {
-    @property({ type: String, visible: true })
+    @property({ visible: true })
     private _redDotId: string = '';
 
     @property({ type: Node, visible: true })
@@ -17,19 +16,28 @@ export class RedDotBadge extends Component {
     @property({ type: Label, visible: true })
     private _countLabel: Label | null = null;
 
-    @property({ type: Boolean, visible: true })
+    @property({ visible: true })
     private _dotOnly: boolean = false;
 
-    @property({ type: Number, visible: true })
+    @property({ type: CCFloat, visible: true })
     private _maxCount: number = 99;
 
     private _binder: BindingScope = new BindingScope();
+    private _loaded: boolean = false;
 
     public get RedDotId(): string {
         return this._redDotId;
     }
 
+    public get BinderCount(): number {
+        return this._binder.count;
+    }
+
     public set RedDotId(value: string) {
+        if (!this._loaded) {
+            this._redDotId = value;
+            return;
+        }
         this._redDotId = value;
         this._update();
     }
@@ -38,13 +46,11 @@ export class RedDotBadge extends Component {
         this._binder.add(RedDot.OnChanged(change => {
             if (change.ids.has(this._redDotId)) this._update();
         }));
+        this._loaded = true;
     }
 
     private _update(): void {
-        if (!this._visual || this._visual === this.node) {
-            Log.error("RedDotBadge: Visual必须绑定独立子节点", { tag: "RedDot" } as LogOptions);
-            return;
-        }
+        this._visual ??= this.node;
         this._visual.active = RedDot.Has(this._redDotId);
         if (this._countLabel) {
             this._countLabel.node.active = !this._dotOnly;

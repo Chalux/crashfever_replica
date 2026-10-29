@@ -29,7 +29,16 @@ test('generated prefab node metadata points back to its owning prefab asset', ()
         for (const node of data.filter(item => item.__type__ === 'cc.Node')) {
             const info = data[node._prefab.__id__];
             assert.equal(info.__type__, 'cc.PrefabInfo');
-            assert.deepEqual(info.asset, { __id__: 0 }, `${name}/${node._name}: missing prefab asset`);
+            if (info.instance) {
+                const nested = JSON.parse(fs.readFileSync(new URL('../../assets/resources/ui/app/RedDotBadge.prefab.meta', import.meta.url), 'utf8'));
+                assert.equal(info.asset?.__uuid__, nested.uuid, `${name}: unknown nested prefab`);
+                assert.equal(data[info.instance.__id__].__type__, 'cc.PrefabInstance');
+                assert.equal(data[info.root.__id__], node);
+                const rootInfo = data[data[data[0].data.__id__]._prefab.__id__];
+                assert.ok(rootInfo.nestedPrefabInstanceRoots?.some(ref => data[ref.__id__] === node), 'nested prefab must be registered for expansion');
+            } else {
+                assert.deepEqual(info.asset, { __id__: 0 }, `${name}/${node._name}: missing prefab asset`);
+            }
             assert.equal(data[info.root.__id__].__type__, 'cc.Node');
         }
     }
@@ -38,6 +47,7 @@ test('generated prefab node metadata points back to its owning prefab asset', ()
 vm.runInNewContext(code, {
     exports: exported,
     require: name => {
+        if (name === 'db://localization-editor/l10n') return { l10n: { t: key => ({ 'common.confirmTitle': '请确认', 'common.confirm': '确认', 'common.cancel': '取消', 'common.actionFailed': '操作失败，请重试' })[key] } };
         if (name === 'cc') return cc;
         if (name.endsWith('/Frame/UI')) return { BaseDlg };
         if (name.endsWith('/Frame/Log')) return { Log: { error() {} } };

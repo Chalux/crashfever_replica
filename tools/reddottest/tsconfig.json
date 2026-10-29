@@ -12,6 +12,9 @@
   "include": [
     "../../assets/Scripts/Frame/RedDot/RedDotStore.ts",
     "../../assets/Scripts/Frame/RedDot/RedDotFormat.ts",
+    "../../assets/Scripts/Frame/RedDot/RedDot.ts",
+    "../../assets/Scripts/Frame/RedDot/RedDotEvent.ts",
+    "../../assets/Scripts/Model/App/RedDot/AppRedDotTree.ts",
     "../../assets/Scripts/Frame/Log/**/*.ts"
   ]
 }

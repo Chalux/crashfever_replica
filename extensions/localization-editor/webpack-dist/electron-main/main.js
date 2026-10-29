@@ -33977,18 +33977,32 @@ var XLSXReader = /*#__PURE__*/ function(CSVReader) {
             value: function read(filePath) {
                 var _this = this;
                 return _async_to_generator(function() {
-                    var data, workbook, worksheet, csvTranslateItems;
+                    var data, workbook, worksheet, csvTranslateItems, nativeFs, fd, size, offset, bytesRead;
                     return _ts_generator(this, function(_state) {
                         switch(_state.label){
                             case 0:
-                                return [
-                                    4,
-                                    (0, _fsextra.readFile)(filePath)
-                                ];
-                            case 1:
-                                data = _state.sent();
-                                workbook = (0, _xlsx.read)(data.buffer, {
-                                    type: 'string'
+                                console.info("[Localization ImportPatch-r5] XLSX descriptor reader", filePath);
+                                // Read bytes from the descriptor; do not use editor-patched readFile wrappers or yield the Buffer.
+                                nativeFs = __webpack_require__("fs");
+                                fd = nativeFs.openSync(filePath, 'r');
+                                try {
+                                    size = nativeFs.fstatSync(fd).size;
+                                    data = new Uint8Array(size);
+                                    offset = 0;
+                                    while (offset < size) {
+                                        bytesRead = nativeFs.readSync(fd, data, offset, size - offset, offset);
+                                        if (!bytesRead) throw new Error('翻译文件读取不完整：' + filePath);
+                                        offset += bytesRead;
+                                    }
+                                } finally {
+                                    nativeFs.closeSync(fd);
+                                }
+                                // Preserve Buffer byteOffset/byteLength; the backing ArrayBuffer may contain unrelated bytes.
+                                if (data[0] !== 0x50 || data[1] !== 0x4b) {
+                                    throw new Error('XLSX 原生读取校验失败：' + filePath + '；类型=' + Object.prototype.toString.call(data) + '；长度=' + data.length + '；文件头=' + Array.from(data).slice(0, 8).join(','));
+                                }
+                                workbook = (0, _xlsx.read)(new Uint8Array(data), {
+                                    type: 'array'
                                 });
                                 if (workbook.SheetNames.length < 1) {
                                     throw new _Errors.CustomError(_MainMessage.MessageCode.UNAVAILABLE_XLSX_FILE, 'no worksheets');
@@ -37774,7 +37788,7 @@ var TranslateDataSourceService = /*#__PURE__*/ function() {
                             } else {
                                 translateData.items.delete(newItem.key);
                             }
-                        } else if (sameValueItem) {
+                        } else if (sameValueItem && item.type !== _TranslateItemType.default.External) {
                             sameValueItem.merge(item, mergeOption);
                             if (!indexData.items.has(sameValueItem.key)) {
                                 var newItem1 = sameValueItem.clone().clearVariant().clearValue();

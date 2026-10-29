@@ -15,6 +15,7 @@ export default [
             '.logtest-out/**',
             '.savetest-out/**',
             '.reddottest-out/**',
+            '.reddottest-badge-out/**',
         ],
     },
     {

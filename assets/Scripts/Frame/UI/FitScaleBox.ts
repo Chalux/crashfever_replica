@@ -77,7 +77,6 @@ export class FitScaleBox extends Component {
      * - `cover`：等比放大到铺满容器，超出的部分需要父节点 Mask 裁切。
      */
     @property({
-        type: String,
         tooltip: "contain=完整显示（只缩不放，默认）；cover=铺满容器（超出部分需 Mask 裁切）",
     })
     public fitMode: FitScaleMode = 'contain';

@@ -1,5 +1,6 @@
 import { _decorator, Label, ScrollView, UITransform } from 'cc';
 import { BaseDlg } from '../../../Frame/UI';
+import { l10n } from 'db://localization-editor/l10n';
 import { Log } from '../../../Frame/Log';
 import { BaseDlgFrame } from './BaseDlgFrame';
 const { ccclass, property } = _decorator;
@@ -39,12 +40,12 @@ export class ConfirmDlg extends BaseDlg {
         this._scroll!.content!.getComponent(UITransform)!.height = Math.max(viewHeight, textHeight + 32);
         this._scroll!.scrollToTop(0);
         this._frame!.configure({
-            title: payload.title ?? '请确认',
+            title: payload.title ?? l10n.t('common.confirmTitle'),
             showClose: false,
             showConfirm: true,
             showCancel: true,
-            confirmText: payload.confirmText ?? '确认',
-            cancelText: payload.cancelText ?? '取消',
+            confirmText: payload.confirmText ?? l10n.t('common.confirm'),
+            cancelText: payload.cancelText ?? l10n.t('common.cancel'),
             width: 608,
             contentHeight: viewHeight,
             onConfirm: () => this._finish(payload.onConfirm),
@@ -66,7 +67,7 @@ export class ConfirmDlg extends BaseDlg {
             Log.error('确认弹窗操作失败', { tag: 'UI', data: error });
             // A failed action can be retried; successful actions cannot execute twice.
             this._settled = false;
-            this._frame!.setTitle('操作失败，请重试');
+            this._frame!.setTitle(l10n.t('common.actionFailed'));
         }
     }
 

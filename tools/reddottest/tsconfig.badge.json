@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "module": "CommonJS",
+        "moduleResolution": "Node",
+        "experimentalDecorators": true,
+        "skipLibCheck": true,
+        "strict": false,
+        "noEmit": false,
+        "baseUrl": "../uitest",
+        "paths": {
+            "cc": ["./cc-stub.ts"]
+        },
+        "types": [],
+        "rootDir": "../..",
+        "outDir": "../../.reddottest-badge-out"
+    },
+    "include": [
+        "../../assets/Scripts/Frame/RedDot/RedDotBadge.ts"
+    ]
+}

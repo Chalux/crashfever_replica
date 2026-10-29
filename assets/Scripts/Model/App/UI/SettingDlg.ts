@@ -56,7 +56,7 @@ export class SettingDlg extends BaseDlg {
 
     private _configureFrame(saveFailed = false): void {
         this._frame?.configure({
-            title: saveFailed ? `${l10n.t("common.settings")}（保存失败）` : l10n.t("common.settings"),
+            title: l10n.t(saveFailed ? 'settings.saveFailed' : 'common.settings'),
             showClose: false,
             showConfirm: true,
             showCancel: true,
@@ -93,18 +93,18 @@ export class SettingDlg extends BaseDlg {
                     if (settings.error) {
                         Log.error('导入设置失败:', { tag: 'Save', data: settings.error });
                         await UIManager.instance.open<ConfirmPayload>('ConfirmDlg', {
-                            title: '导入失败',
+                            title: l10n.t('settings.importFailed'),
                             message: settings.error,
-                            confirmText: '确定',
-                            cancelText: '关闭',
+                            confirmText: l10n.t('common.ok'),
+                            cancelText: l10n.t('common.close'),
                         });
                         return;
                     }
                     await UIManager.instance.open<ConfirmPayload>('ConfirmDlg', {
-                        title: '导入设置',
-                        message: '导入会覆盖当前设置，是否继续？',
-                        confirmText: '导入',
-                        cancelText: '取消',
+                        title: l10n.t('settings.importTitle'),
+                        message: l10n.t('settings.importConfirm'),
+                        confirmText: l10n.t('common.import'),
+                        cancelText: l10n.t('common.cancel'),
 
                         onConfirm: () => {
                             SettingsService.ImportSettings(settings.settings!);
@@ -119,10 +119,10 @@ export class SettingDlg extends BaseDlg {
                 (error) => {
                     Log.error('导入设置失败:', { tag: 'Save', data: error });
                     void UIManager.instance.open<ConfirmPayload>('ConfirmDlg', {
-                        title: '导入失败',
-                        message: error instanceof Error ? error.message : '无法读取备份文件',
-                        confirmText: '确定',
-                        cancelText: '关闭',
+                        title: l10n.t('settings.importFailed'),
+                        message: error instanceof Error ? error.message : l10n.t('settings.readFailed'),
+                        confirmText: l10n.t('common.ok'),
+                        cancelText: l10n.t('common.close'),
                     }).catch(openError => {
                         Log.error('无法显示导入失败提示', { tag: 'UI', data: openError });
                     });
