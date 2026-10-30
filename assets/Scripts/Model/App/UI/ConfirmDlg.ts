@@ -12,6 +12,8 @@ export interface ConfirmPayload {
     cancelText?: string;
     onConfirm?: () => void | Promise<void>;
     onCancel?: () => void | Promise<void>;
+    showConfirm?: boolean;
+    showCancel?: boolean;
 }
 
 @ccclass('ConfirmDlg')
@@ -42,8 +44,8 @@ export class ConfirmDlg extends BaseDlg {
         this._frame!.configure({
             title: payload.title ?? l10n.t('common.confirmTitle'),
             showClose: false,
-            showConfirm: true,
-            showCancel: true,
+            showConfirm: payload.showConfirm ?? true,
+            showCancel: payload.showCancel ?? true,
             confirmText: payload.confirmText ?? l10n.t('common.confirm'),
             cancelText: payload.cancelText ?? l10n.t('common.cancel'),
             width: 608,
@@ -53,7 +55,7 @@ export class ConfirmDlg extends BaseDlg {
         });
     }
 
-    protected updateView(): void {}
+    protected updateView(): void { }
 
     private async _finish(callback?: () => void | Promise<void>): Promise<void> {
         if (this._settled) return;

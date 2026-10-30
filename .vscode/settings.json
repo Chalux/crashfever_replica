@@ -3,5 +3,6 @@
     "typescript.enablePromptUseWorkspaceTsdk": true,
     "eslint.validate": ["typescript"],
     "eslint.run": "onType",
-    "eslint.useFlatConfig": true
+    "eslint.useFlatConfig": true,
+    "js/ts.tsdk.path": "node_modules/typescript/lib"
 }

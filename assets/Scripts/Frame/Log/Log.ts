@@ -6,7 +6,7 @@ import { LogLevel } from './LogLevel';
 
 /** Unified game log entry point. Legacy Log.error(message, 'UI') stays valid. */
 export class Log {
-    /** Preserve legacy console verbosity. Broadcast always receives every level. */
+    /** Controls console output for info/debug. Broadcast always receives every level. */
     public static verbose = false;
 
     private static readonly _bus = Log._createBus();

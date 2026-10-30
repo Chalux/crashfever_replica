@@ -1,0 +1,26 @@
+[
+    {
+        "id": "char_001",
+        "name": "测试角色1",
+        "element": 1,
+        "race": 1
+    },
+    {
+        "id": "char_002",
+        "name": "测试角色2",
+        "element": 2,
+        "race": 2
+    },
+    {
+        "id": "char_003",
+        "name": "测试角色3",
+        "element": 3,
+        "race": 4
+    },
+    {
+        "id": "char_004",
+        "name": "测试角色4",
+        "element": 4,
+        "race": 9
+    }
+]

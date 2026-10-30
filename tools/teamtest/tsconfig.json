@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "strict": true,
+    "lib": ["ES2020", "DOM"],
+    "types": [],
+    "rootDir": "../..",
+    "outDir": "../../.teamtest-out",
+    "skipLibCheck": true
+  },
+  "include": [
+    "../../assets/Scripts/Frame/Base/**/*.ts",
+    "../../assets/Scripts/Frame/Event/**/*.ts",
+    "../../assets/Scripts/Frame/Log/**/*.ts",
+    "../../assets/Scripts/Utils/Singleton.ts",
+    "../../assets/Scripts/Model/Character/CharacterConfig.ts",
+    "../../assets/Scripts/Model/Character/CharacterModel.ts",
+    "../../assets/Scripts/Model/Character/CharacterController.ts",
+    "../../assets/Scripts/Model/Team/TeamData.ts",
+    "../../assets/Scripts/Model/Team/TeamSaveService.ts",
+    "../../assets/Scripts/Model/Team/TeamModel.ts",
+    "../../assets/Scripts/Model/Team/TeamController.ts"
+  ]
+}

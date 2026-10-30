@@ -18,7 +18,7 @@ export class MainWin extends BaseWin {
     private _settingBtn: Button | null = null;
 
     protected onOpen(): void {
-        // 红点由 AppEntry 启动时写入；不要在 onOpen 里 seed/ClearTree（窗口有 30s 缓存，会重复执行）。
+        // 角色配置在 AppEntry 启动时统一加载；窗口缓存重开时不重复读取。
     }
 
     protected updateView(): void {

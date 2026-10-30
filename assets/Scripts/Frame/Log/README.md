@@ -5,7 +5,7 @@
 ```ts
 import { Log, LogChannel } from '../../../Frame/Log';
 
-Log.verbose = true; // 开启 console 的 info/debug；默认 false，兼容旧框架
+Log.verbose = true; // console 默认输出 info/debug；设为 false 可静默这两级
 Log.info('进入界面', 'UI'); // 旧调用方式仍然有效
 Log.error('加载失败', { tag: 'Resource', data: error }); // 保留原始 Error 和堆栈
 Log.info('回合开始', {
@@ -15,7 +15,7 @@ Log.info('回合开始', {
 });
 ```
 
-`tag` 是模块标签，`channels` 是输出目的地掩码，两者独立。未指定频道时使用 Console；None 不分发。支持 debug、info、warn、error 四个等级。`verbose` 只控制内置 console 输出，其他接收端始终能收到所有等级。
+`tag` 是模块标签，`channels` 是输出目的地掩码，两者独立。未指定频道时使用 Console；None 不分发。支持 debug、info、warn、error 四个等级。`verbose` 只控制内置 console 的 info/debug 输出（默认开启），其他接收端始终能收到所有等级。
 
 ## 添加输出频道
 

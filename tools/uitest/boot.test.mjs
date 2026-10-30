@@ -11,10 +11,16 @@ const code = ts.transpileModule(source, {
 const flush = () => new Promise(resolve => setImmediate(resolve));
 
 function harness({ titleFailures = 0, loadingFails = false, titleThrows = false, deferredTitle = null } = {}) {
-    const calls = { managers: 0, settings: 0, seed: 0, bgm: 0, title: 0, loading: 0, progress: [], failures: [], closed: [], order: [] };
+    const calls = { managers: 0, settings: 0, models: 0, characters: 0, seed: 0, bgm: 0, title: 0, loading: 0, progress: [], failures: [], closed: [], order: [] };
     class Loading {
         ShowProgress(completed, total) { calls.progress.push([completed, total]); }
         ShowFailure(message) { calls.failures.push(message); }
+    }
+    class CharacterController {
+        constructor() { this.loaded = false; }
+        IsLoaded() { return this.loaded; }
+        async Initialize() { calls.characters++; calls.order.push('characters'); this.loaded = true; }
+        dispose() {}
     }
     class Manager {
         constructor() { calls.managers++; }
@@ -46,9 +52,22 @@ function harness({ titleFailures = 0, loadingFails = false, titleThrows = false,
         '../../Frame/UI': { UIManager: Manager, UIOpenOpt: class {}, UIRuntimeRegistry: Registry, UIRegistration: { window() {}, dialog() {} }, EUILayer: {} },
         './UI/BootLoadingWin': { BootLoadingWin: Loading },
         './UI/TitleWin': {},
+        './Recovery/RecoveryService': {
+            RecoveryService: {
+                getInstance: () => ({
+                    check: async () => ({ state: 0 }),
+                    discard: async () => {},
+                }),
+                clearInstance() {},
+            },
+            RecoveryState: { none: 0, available: 1, incompatible: 2 },
+        },
         '../../Frame/Audio/SoundManager': { SoundManager: class {} },
         '../../Frame/Audio/Sound': { Sound: { Configure() {}, PlayBgm() { calls.bgm++; calls.order.push('bgm'); } } },
         './Save/SettingsService': { SettingsService: { Initialize() { calls.settings++; calls.order.push('settings'); } } },
+        '../ModelFactory': { registerModels() { calls.models++; calls.order.push('models'); return {}; } },
+        '../Character/CharacterController': { CharacterController },
+        '../Character/CharacterConfigLoader': { CharacterConfigLoader: class {} },
         '../../Frame/RedDot/index': { RedDot: { Initialize() {}, Dispose() {} } },
         './RedDot/AppRedDotTree': { registerAppRedDots() {}, seedDemoRedDots() { calls.seed++; } },
         'cc/env': { DEV: true },
@@ -64,13 +83,13 @@ function harness({ titleFailures = 0, loadingFails = false, titleThrows = false,
     return { app, calls };
 }
 
-test('normal boot restores settings before BGM and closes loading after title', async () => {
+test('normal boot restores settings, registers models, loads characters, and closes loading after title', async () => {
     const { app, calls } = harness();
     await app._runBootAttempt();
-    assert.deepEqual(calls.order, ['settings', 'bgm']);
+    assert.deepEqual(calls.order, ['settings', 'models', 'bgm', 'characters']);
     assert.equal(calls.title, 1);
     assert.ok(calls.closed.includes('BootLoadingWin'));
-    assert.deepEqual(calls.progress.at(-1), [4, 4]);
+    assert.deepEqual(calls.progress.at(-1), [5, 5]);
 });
 
 for (const titleThrows of [false, true]) {
@@ -84,6 +103,8 @@ for (const titleThrows of [false, true]) {
         assert.equal(calls.title, 2, 'retry must actually start a second title attempt');
         assert.equal(calls.managers, 1);
         assert.equal(calls.settings, 1);
+        assert.equal(calls.models, 1);
+        assert.equal(calls.characters, 1);
         assert.equal(calls.seed, 1);
         assert.equal(calls.bgm, 1);
         assert.ok(calls.closed.includes('BootLoadingWin'));

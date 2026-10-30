@@ -35,11 +35,12 @@ export class TitleWin extends BaseWin {
             await payload.onEnter();
         } catch (error) {
             Log.error('进入主界面失败', { tag: 'App', data: error });
+        } finally {
             this._enterlock = false;
         }
     }
 }
 
 export interface TitlePayload {
-    onEnter: () => Promise<void>;
+    onEnter: () => Promise<boolean>;
 }

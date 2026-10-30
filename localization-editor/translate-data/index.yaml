@@ -675,6 +675,69 @@ items:
       isVariant: false
       associations: []
       _variants: []
+  - - recovery.foundTitle
+    - key: recovery.foundTitle
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - recovery.foundMessage
+    - key: recovery.foundMessage
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - recovery.continue
+    - key: recovery.continue
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - recovery.discard
+    - key: recovery.discard
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - recovery.unavailable
+    - key: recovery.unavailable
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - recovery.incompatibleTitle
+    - key: recovery.incompatibleTitle
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - recovery.incompatibleMessage
+    - key: recovery.incompatibleMessage
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - loading.initcharacters
+    - key: loading.initcharacters
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - loading.initcharacterserror
+    - key: loading.initcharacterserror
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
 languageConfig:
   bcp47Tag: index
   translateFinished: 360

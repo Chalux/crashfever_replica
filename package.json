@@ -15,7 +15,9 @@
     "lint:app": "eslint assets/Scripts/Model/App",
     "test:log": "tsc -p tools/logtest/tsconfig.json && node --test tools/logtest/log.test.mjs",
     "test:save": "tsc -p tools/savetest/tsconfig.json && node --test tools/savetest/save.test.mjs",
+    "test:team": "tsc -p tools/teamtest/tsconfig.json && node --test tools/teamtest/team.test.mjs tools/teamtest/character.test.mjs tools/teamtest/save.test.mjs",
     "test:confirm": "node --test tools/uitest/confirm.test.mjs",
+    "test:entry": "node --test tools/uitest/entry.test.mjs",
     "test:reddot": "tsc -p tools/reddottest/tsconfig.json && tsc -p tools/reddottest/tsconfig.badge.json && node --test tools/reddottest/reddot.test.mjs tools/reddottest/reddot-facade.test.mjs tools/reddottest/reddot-prefab.test.mjs tools/reddottest/reddot-badge.test.mjs tools/reddottest/reddot-app.test.mjs"
   },
   "devDependencies": {

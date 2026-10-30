@@ -675,6 +675,69 @@ items:
       isVariant: false
       associations: []
       _variants: []
+  - - recovery.foundTitle
+    - key: recovery.foundTitle
+      value: 发现未结束的战斗
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - recovery.foundMessage
+    - key: recovery.foundMessage
+      value: 上次战斗尚未结束，是否继续战斗？
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - recovery.continue
+    - key: recovery.continue
+      value: 继续战斗
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - recovery.discard
+    - key: recovery.discard
+      value: 放弃战斗
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - recovery.unavailable
+    - key: recovery.unavailable
+      value: 战斗功能尚未实现，暂时无法继续。
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - recovery.incompatibleTitle
+    - key: recovery.incompatibleTitle
+      value: 恢复数据不兼容
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - recovery.incompatibleMessage
+    - key: recovery.incompatibleMessage
+      value: 恢复数据与当前配置不兼容，将前往关卡选择。
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - loading.initcharacters
+    - key: loading.initcharacters
+      value: 正在加载角色配置
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - loading.initcharacterserror
+    - key: loading.initcharacterserror
+      value: 角色配置加载失败，请重试
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
 languageConfig:
   bcp47Tag: zh-Hans-CN
   translateFinished: 360
